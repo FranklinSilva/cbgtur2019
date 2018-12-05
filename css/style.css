@@ -356,7 +356,7 @@ body {
 }
 
 .hotel--img.porto-barra{
-	background: url(../img/hotels/default.png) no-repeat 30% 70%;
+	background: url(../img/hotels/portobarra.jpg) no-repeat 30% 70%;
 }
 
 .speakers-list--container {
@@ -1154,4 +1154,8 @@ body {
 
   .displayNone {
 	  display: none;
+  }
+
+  .pointer-object {
+	  cursor: pointer;
   }
