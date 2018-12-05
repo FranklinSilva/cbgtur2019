@@ -21,3 +21,8 @@ function desgraca() {
         behavior: 'smooth'
     });
 }
+
+toogleModal = function() {
+    var el = document.querySelector('.simple-modal');
+    el.classList.toggle('displayNone');
+}

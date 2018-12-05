@@ -79,7 +79,7 @@
 				<p class="body-paragraph">
 					Escolha os seu(s) ingresso(s) abaixo e nos vemos lá!
 				</p>
-				<div class="full-calendar-box">					
+				<div onclick="toogleModal()" class="full-calendar-box pointer-object">					
 					<span><i class="animated fas fa-award"></i> Veja a programação Completa</span>
 				</div>
 			</div>
@@ -256,10 +256,27 @@
 
 	</section>
 			
-		<footer class="erika-footer">
-			<p>CBGTUR 2019 - All rights Reserved</p>
-			
-		</footer>
+	<footer class="erika-footer">
+		<p>CBGTUR 2019 - All rights Reserved</p>
+		
+	</footer>
+
+	<div class="simple-modal displayNone">
+		<div class="simple-modal--dialog simple-modal--dialog--full-width fadeInDown animated">
+		  <div class="simple-modal--dialog--body">
+	  
+			<img src="img/cbgtur.png">
+	  
+			<!--<p class=" ev-btn--span-below caption-text text--center pointer-object"
+			 ng-click="ri.signupPrompt =false">Fechar</p>-->
+	  
+			<div onclick="toogleModal()" class="full-calendar-box simple-modal__spacing pointer-object">					
+				<span><i class="animated fas fa-times-circle"></i>  Fechar</span>
+			</div>
+		  </div>
+		</div>
+	</div>
+
 	</body>	
 		
 		

@@ -1006,3 +1006,152 @@ body {
 	}
 }
 
+/*
+	*SIMPLE MODAL
+*/
+.simple-modal {
+	overflow-y: auto;
+	z-index: 3000303;
+	text-align: center;
+	padding: 0 !important;
+	/*display: none;*/
+  }
+  .simple-modal:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -4px;
+  }
+  
+  .simple-modal__show {
+	display: initial;
+  }
+  
+  .simple-modal {
+	position: fixed;
+	z-index: -100000000000000000000;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+	background-color: rgba(60, 60, 60, 0.5);
+  }
+  
+  .alertify-logs {
+	position: fixed;
+	z-index: 1051;
+  }
+  
+  .simple-modal--dialog {
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+	background-color: #fafafa;
+	padding: 0.5rem;
+	min-width: 290px;
+  }
+  .simple-modal--dialog.simple-modal--gallery {
+	background-color: #212124;
+	padding: 0;
+  }
+  @media screen and (max-width: 39.9375em) {
+	.simple-modal--dialog.simple-modal--gallery {
+	  width: 100vw;
+	  height: 100vh;
+	  display: table;
+	  position: absolute;
+	  top: 0;
+	}
+  }
+  @media screen and (min-width: 40em) {
+	.simple-modal--dialog.simple-modal--gallery {
+	  width: 90vw;
+	}
+  }
+  @media screen and (max-width: 39.9375em) {
+	.simple-modal--dialog.simple-modal--dialog--full-width {
+	  width: 100vw;
+	  height: 100vh;
+	  display: table;
+	  position: absolute;
+	  top: 0;
+	}
+  }
+  @media screen and (min-width: 40em) {
+	.simple-modal--dialog {
+	  padding: 1rem;
+	  width: 400px;
+	}
+  }
+  
+  .simple-modal--dialog--header {
+	display: block;
+	position: relative;
+	/* right: 15px; */
+	left: 7px;
+	top: -30px;
+	float: right;
+  }
+  
+  .simple-modal--close {
+	cursor: pointer;
+	font-size: 50px;
+	text-align: right;
+	margin: 0;
+	display: inline;
+  }
+  
+  .simple-modal--dialog--body {
+	padding: 0.5rem 0;
+	max-width: 95vw;
+  }
+  @media screen and (min-width: 40em) {
+	.simple-modal--dialog--body {
+	  padding: 0.5rem 10%;
+	}
+  }
+  
+  .simple-modal-label {
+	margin: 0 auto;
+  }
+  
+  .simple-modal--front {
+	z-index: 100000000000000000000;
+  }
+  
+  .dialog-title {
+	font-size: 35px;
+	padding: 0 0.5rem 0.1rem;
+	font-weight: 100;
+	margin: 0;
+  }
+  
+  .dialog-sub-title {
+	font-size: 20px;
+	padding: 0 0.5rem 0.1rem;
+	font-weight: 100;
+	margin: 0;
+  }
+  
+  .simple-modal__spacing {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+  }
+  
+  .simple-modal--gallery--close-button {
+	font-size: 35px;
+	color: white;
+	display: block;
+  }
+
+  .displayNone {
+	  display: none;
+  }
