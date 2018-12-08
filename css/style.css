@@ -223,7 +223,7 @@ body {
 }
 
 .sympla-container {
-	margin: 0 auto;
+	margin: 0 auto -13rem;
     width: 95%;
 }
 
@@ -302,7 +302,14 @@ body {
 	font-size: 18px;
 	text-align: center;
 	display: block;
+	font-size: black;
+	text-decoration: none;
 } 
+
+a:visited .hotels-section--title {
+	color: black;
+	text-decoration: none;
+}
 
 .hotel--img {
 	width: 100px;
@@ -356,7 +363,7 @@ body {
 }
 
 .hotel--img.porto-barra{
-	background: url(../img/hotels/portobarra.jpg) no-repeat 30% 70%;
+	background: url(../img/hotels/portobarras.jpg) no-repeat 30% 70%;
 }
 
 .speakers-list--container {
@@ -1088,7 +1095,7 @@ body {
   @media screen and (min-width: 40em) {
 	.simple-modal--dialog {
 	  padding: 1rem;
-	  width: 400px;
+	  width: 600px;
 	}
   }
   
@@ -1159,3 +1166,4 @@ body {
   .pointer-object {
 	  cursor: pointer;
   }
+
