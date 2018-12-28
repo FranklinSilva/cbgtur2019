@@ -27,7 +27,7 @@ body {
 	filter: contrast(120%);
 }
 
-.image-1 .bigtitle, .image-1 h2, .image-2 h1, .image-2 h2 {
+.image-1 .bigtitle, .image-1 h2, .image-2 .bigtitle, .image-2 h2 {
     color: #fafafa;
     font-size: 37px;
     text-transform: uppercase;
@@ -125,7 +125,7 @@ body {
 		margin: 0 32%;
 	}
 	
-	.image-1 h1, .image-2 h1 {
+	.image-1 .bigtitle, .image-2 .bigtitle {
 		top: 42vh;
 		margin: 0 10%;
 	}
@@ -136,7 +136,7 @@ body {
 }
 
 @media screen and (min-width: 64em){
-	.image-1 h1, .image-2 h1 {
+	.image-1 .bigtitle, .image-2 .bigtitle {
 		font-size: 70px;
 	}
 
