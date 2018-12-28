@@ -27,7 +27,7 @@ body {
 	filter: contrast(120%);
 }
 
-.image-1 h1, .image-1 h2, .image-2 h1, .image-2 h2 {
+.image-1 .bigtitle, .image-1 h2, .image-2 h1, .image-2 h2 {
     color: #fafafa;
     font-size: 37px;
     text-transform: uppercase;
