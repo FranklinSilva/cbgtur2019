@@ -239,6 +239,18 @@ body {
 	cursor: pointer;
 }
 
+.simple-modal-hotel--title {
+	font-size: 2rem;
+    margin: 0.5rem 0;
+    text-align: center;
+    color: rgb(161, 79, 40);
+    font-weight: 300;
+}
+
+.modal-hotel--img {
+	margin: 1rem 0 2rem;
+	width: 100%;
+}
 
 /*.collumns.small-6.medium-4.large-3.hotels-section--item, 
 .collumns.small-12.hotels-section--item,
