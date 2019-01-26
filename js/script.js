@@ -94,3 +94,39 @@ populateModal = function(index) {
 
     toogleModalHotel();
 };
+
+
+
+
+//social Header
+activateSocialMediaOnScroll = function () {
+    lastKnownScrollPosition = 0;
+    ticking = false;
+
+    var efficientCheckPosition = UtilityFrontService.debounce(function (e) {
+
+        lastKnownScrollPosition = window.scrollY;
+
+        if (!ticking) {
+
+            window.requestAnimationFrame(function () {
+                fixHeader(lastKnownScrollPosition);
+                ticking = false;
+            });
+
+            ticking = true;
+
+        }
+
+    }, 500);
+
+    window.addEventListener('scroll', efficientCheckPosition);
+}
+
+fixHeader = function (pos) {
+    if (pos > 60) {
+        window.document.querySelector(".specific--hubschool-header").classList.add('fixed');
+    }
+    else
+        window.document.querySelector(".specific--hubschool-header").classList.remove('fixed');
+}
