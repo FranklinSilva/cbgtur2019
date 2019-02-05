@@ -73,6 +73,11 @@ var modalHotelContent = [
         href: "https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiYoKDxmY_fAhUL5HcKHYp-DI8YABABGgJlZg&ei=fS4LXI2vK5uD1fAPiYSqyA8&ohost=www.google.com.br&cid=CAESEeD2MZpmvcVqQ9MuaA0i87jU&sig=AOD64_0IVvMS-JIQWL7rD9pgvTsKbLatZQ&q=&sqi=2&ved=2ahUKEwjN4ZbxmY_fAhWbQRUIHQmCCvkQ0Qx6BAgaEAE&adurl=",
         img: "img/modal/300ppi/hpBarra.png"
     },
+    {
+        name: "Wish Hotel da Bahia",
+        href: "https://www.gjphotels.com/ ",
+        img: "img/modal/300ppi/wish.png"
+    }
 ];
 
 toogleModalHotel = function() {

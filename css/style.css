@@ -379,6 +379,10 @@ a:visited .hotels-section--title {
 	background: url(../img/hotels/portobarras.jpg) no-repeat 30% 70%;
 }
 
+.hotel--img.wish-bahia{
+	background: url(../img/hotels/wish.png) no-repeat 30% 70%;
+}
+
 .speakers-list--container {
 	padding: 2rem 0;
 }
@@ -650,7 +654,7 @@ a:visited .hotels-section--title {
 .erika-footer{
 	color: #404142;
 	padding: 2rem;
-	background-color: #f5f5f5;
+	background-color: #fff;
 }
 
 .erika-footer p {
