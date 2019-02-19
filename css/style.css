@@ -687,6 +687,7 @@ a:visited .hotels-section--title {
 	display: block;
 	margin: 0 auto;
 	max-width: 200px;
+	padding: 1rem;
 	border: 5px solid rgb(135, 85, 30)
 }
 
