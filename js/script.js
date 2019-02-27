@@ -14,11 +14,11 @@ $('.owl-carousel').owlCarousel({
 });
 
 let list = document.querySelector('#visitas');
-
-list.addEventListener("mouseover", function(event) {
-    console.log(event);
-})
-
+if(!!list){
+    list.addEventListener("mouseover", function(event) {
+        console.log(event);
+    })
+}
 
 function desgraca() {
     var el = document.querySelector('#sympla');
