@@ -13,11 +13,37 @@ $('.owl-carousel').owlCarousel({
     }
 });
 
-let list = document.querySelector('#visitas');
+//let list = document.querySelector('#visitas');
 
-list.addEventListener("mouseover", function(event) {
-    console.log(event);
-})
+function selectItemEnter(childNodeNumber){
+   /*console.log(list.childNodes);
+   const childNodes = Array.from(list.childNodes);
+   console.log(childNodes);
+
+   const selected = childNodes.filter(e => {
+    return !!e.className && e.className.indexOf(`-${childNodeNumber}`) >= 0;
+    })[0];*/
+
+    var selected = document.querySelector(`.overlay-${childNodeNumber}`);
+    selected.style.opacity = 0; 
+    console.log(selected);
+}
+
+function selectItemLeave(childNodeNumber){
+    /*console.log(list.childNodes);
+    const childNodes = Array.from(list.childNodes);
+    console.log(childNodes);
+ 
+    const selected = childNodes.filter(e => {
+     return !!e.className && e.className.indexOf(`-${childNodeNumber}`) >= 0;
+     })[0];*/
+ 
+     var selected = document.querySelector(`.overlay-${childNodeNumber}`);
+     selected.style.opacity = 1; 
+     console.log(selected);
+ }
+
+
 
 
 function desgraca() {

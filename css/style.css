@@ -1243,6 +1243,56 @@ a:visited .hotels-section--title {
   }
 
 
+	.visitas{
+		cursor: pointer;
+		height: 15em;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		padding: 0 !important;
+	}
+
+	.visita-1{
+		background-image: url(../img/visitasTecnicas/morro.jpg);
+	}
+
+	.visita-2{
+		background-image: url(../img/visitasTecnicas/frades.jpg);
+	}
+
+	.visita-3{
+		background-image: url(../img/visitasTecnicas/forte.jpg);
+	}
+
+	.visita-4{
+		background-image: url(../img/visitasTecnicas/mangue.jpg);
+	}
+
+	.visita-5{
+		background-image: url(../img/visitasTecnicas/santo.jpg);
+	}
+
+	.visita-6{
+		background-image: url(../img/visitasTecnicas/experiencia.jpg);
+	}
+
+	.overlay-container--visitas{
+		justify-content: center;
+    align-items: center;
+    display: flex;
+		padding: 0;
+		background-color: rgba(0,0,0,.6);
+		height: 100%;
+		width: 100%;
+		transition: 1s;
+	}
+
+	.overlay-text--visitas {
+		font-size: 1.4em;
+		color: #f5f5f5;
+		text-align: center
+	}
 
 	/*INSIDE PAGE CBGTUR*/
 	.cbgtur--inside-header{
