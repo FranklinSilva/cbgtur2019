@@ -50,7 +50,7 @@ if(!!list){
     })
 }
 
-function desgraca() {
+desgraca = function() {
     var el = document.querySelector('#sympla');
     console.log(el);
     el.scrollIntoView({
@@ -58,10 +58,71 @@ function desgraca() {
     });
 }
 
+toogleModalVisitas = function() {
+    var el = document.querySelector('.simple-modal-visitas');
+    el.classList.toggle('displayNone');
+};
+
+var modalVisitasContent = [
+    {
+        title: "Passeio Morro de São Paulo",
+        dates: "23, 24 e 25/05/19",
+        orientations: "R$165 Day Use + R$15 de Taxa Ambiental",
+        img: "img/visitasTecnicas/morro.jpg"
+    },
+    {
+        title: "Passeio Ilhas dos Frades e Itaparica",
+        dates: "23, 24 e 25/05/19",
+        orientations: "R$100 Day Use com almoço e Taxa Ambiental",
+        img: "img/visitasTecnicas/frades.jpg"
+    },
+    {
+        title: "Passeio Praia do Forte/Guarajuba",
+        dates: "23, 24, 25 e 26/05/19",
+        orientations: "R$60 Acesso gratuito ao projeto tamar comprando neste pacote",
+        img: "img/visitasTecnicas/forte.jpg"
+    },
+    {
+        title: "Passeio Mangue Seco",
+        dates: "23, 24, 25/05/19",
+        orientations: "R$180 Day Use",
+        img: "img/visitasTecnicas/mangue.jpg"
+    },
+    {
+        title: "Passeio Cidades Históricas, Recôncavo Baiano",
+        dates: "23, 24, 25 e 26/05/19",
+        orientations: "R$150 Day Use",
+        img: "img/visitasTecnicas/santo.jpg"
+    },
+    {
+        title: "Turismo de Experiência em Salvador-Ba",
+        dates: "23, 24, 25 e 26/05/19",
+        orientations: "Transfer por pessoa R$50",
+        img: "img/visitasTecnicas/experiencia.jpg"
+    },
+];
+
+populateModalVisitas = function(index) {
+    var titleModal = document.querySelector('.simple-modal-visitas--title');
+    titleModal.innerHTML = modalVisitasContent[index].title;
+    
+    var datesModal = document.querySelector('.simple-modal-visitas--dates');
+    datesModal.innerHTML = modalVisitasContent[index].dates;
+
+    var orientationsModal = document.querySelector('.simple-modal-visitas--orientations');
+    orientationsModal.innerHTML = modalVisitasContent[index].orientations;
+
+    var imgModal = document.querySelector('.modal-visitas--img');
+    imgModal.src = modalVisitasContent[index].img;
+
+    toogleModalVisitas();
+};
+
+
 toogleModal = function() {
     var el = document.querySelector('.simple-modal-programacao');
     el.classList.toggle('displayNone');
-}
+};
 
 var modalHotelContent = [
     {

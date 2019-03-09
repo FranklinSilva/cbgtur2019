@@ -148,40 +148,40 @@
 	</section>-->
 
 	<section class="basic-section">
-		<h3 class="title-section">Visitas técnicas</h3>
+		<h3 style="margin-top: 5rem" class="title-section">Visitas técnicas</h3>
 
 		<div id="visitas" class="row no-margin" style="max-width: none">
-			<div onmouseover="selectItemEnter(1)" onmouseleave="selectItemLeave(1)" class="column small-12 medium-4 large-4 visitas visita-1">
+			<div onclick="populateModalVisitas(0)" onmouseover="selectItemEnter(1)" onmouseleave="selectItemLeave(1)" class="column small-12 medium-4 large-4 visitas visita-1">
 				<div class="overlay-1 overlay-container--visitas">
 					<p class="overlay-text--visitas">Morro de São Paulo</p>
 				</div>
 			</div>
 			
-			<div onmouseover="selectItemEnter(2)" onmouseleave="selectItemLeave(2)" class="column small-12 medium-4 large-4 visitas visita-2">
+			<div onclick="populateModalVisitas(1)" onmouseover="selectItemEnter(2)" onmouseleave="selectItemLeave(2)" class="column small-12 medium-4 large-4 visitas visita-2">
 				<div class="overlay-2 overlay-container--visitas">
 					<p class="overlay-text--visitas">Ilhas dos Frades e Itaparica</p>
 				</div>
 			</div>
 			
-			<div onmouseover="selectItemEnter(3)" onmouseleave="selectItemLeave(3)" class="column small-12 medium-4 large-4 visitas visita-3">
+			<div onclick="populateModalVisitas(2)" onmouseover="selectItemEnter(3)" onmouseleave="selectItemLeave(3)" class="column small-12 medium-4 large-4 visitas visita-3">
 				<div class="overlay-3 overlay-container--visitas">
 					<p class="overlay-text--visitas">Praia do Forte</p>
 				</div>
 			</div>
 
-			<div onmouseover="selectItemEnter(4)" onmouseleave="selectItemLeave(4)" class="column small-12 medium-4 large-4 visitas visita-4">
+			<div onclick="populateModalVisitas(3)" onmouseover="selectItemEnter(4)" onmouseleave="selectItemLeave(4)" class="column small-12 medium-4 large-4 visitas visita-4">
 				<div class="overlay-4 overlay-container--visitas">
 					<p class="overlay-text--visitas">Mangue Seco</p>
 				</div>
 			</div>
 
-			<div onmouseover="selectItemEnter(5)" onmouseleave="selectItemLeave(5)" class="column small-12 medium-4 large-4 visitas visita-5">
+			<div onclick="populateModalVisitas(4)" onmouseover="selectItemEnter(5)" onmouseleave="selectItemLeave(5)" class="column small-12 medium-4 large-4 visitas visita-5">
 				<div class="overlay-5 overlay-container--visitas">
 					<p class="overlay-text--visitas">Cidades Históricas</p>
 				</div>
 			</div>
 
-			<div onmouseover="selectItemEnter(6)" onmouseleave="selectItemLeave(6)" class="column small-12 medium-4 large-4 visitas visita-6">
+			<div onclick="populateModalVisitas(5)" onmouseover="selectItemEnter(6)" onmouseleave="selectItemLeave(6)" class="column small-12 medium-4 large-4 visitas visita-6">
 				<div class="overlay-6 overlay-container--visitas">
 					<p class="overlay-text--visitas">Turismo de Experiência em Salvador</p>
 				</div>
@@ -191,7 +191,7 @@
 	</section>
 
 	<section class="basic-section">
-		<div class="row" style="padding-top: 4rem; justify-content: center">
+		<div class="row" style="justify-content: center">
 			<a href="./ParceriaLatam.html">
 				<img class="hide-for-small-only" src="img/latamsmall.png">
 				<img class="show-for-small-only" src="img/latamlarge.png">
@@ -415,6 +415,28 @@
 		</div>
 		<p>CBGTUR 2019 - All rights Reserved</p>
 	</footer>
+
+	<div class="simple-modal simple-modal-visitas displayNone">
+		<div class="simple-modal--dialog simple-modal--dialog--full-width fadeInDown animated">
+			<div class="simple-modal--dialog--body">
+		
+			  <h3 class="simple-modal-visitas--title"></h3>
+
+			  <div class="row visitas--content-modal">
+				<div class="columns small-12 medium-6">
+					<img class="modal-visitas--img" src="#">
+				</div>  
+				<div class="columns small-12 medium-6">
+					<p class="simple-modal-visitas--dates"></p>
+					<p class="simple-modal-visitas--orientations"></p>
+				</div>  
+			  </div>
+			  <div onclick="toogleModalVisitas()" class="full-calendar-box simple-modal__spacing pointer-object">					
+				  <span><i class="animated fas fa-times-circle"></i>  Fechar</span>
+			  </div>
+			</div>
+		</div>
+	</div>
 
 	<div class="simple-modal simple-modal-programacao displayNone">
 		<div class="simple-modal--dialog simple-modal--dialog--full-width fadeInDown animated">

@@ -1294,6 +1294,35 @@ a:visited .hotels-section--title {
 		text-align: center
 	}
 
+	.simple-modal-visitas--title {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin: 0;
+		text-align: center;
+		color: #e47343;
+		margin: 1rem 0;		
+	}
+
+	.modal-visitas--img{ display: block; margin: 0 auto; }
+
+	.simple-modal-visitas--dates {
+		font-size: 1.2rem;
+		font-weight: 600;
+		margin: 0;
+		color: #404142;
+	}
+
+	.simple-modal-visitas--orientations {
+		font-size: 1.2rem;
+		color: #404142;
+    font-weight: 300;
+		margin: 0;
+	}
+
+	.visitas--content-modal{
+		margin: 2rem 0;
+	}
+
 	/*INSIDE PAGE CBGTUR*/
 	.cbgtur--inside-header{
 		background: url(../img/salvador.jpg) 80%;
