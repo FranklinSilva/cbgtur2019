@@ -147,7 +147,8 @@ body {
 
 @media screen and (min-width: 64em){
 	.image-1 h1, .image-2 h1 {
-		font-size: 70px;
+		font-size: 65px;
+		top: 38vh;
 	}
 
 	.vertical-full--header {
