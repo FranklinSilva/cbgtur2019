@@ -13,8 +13,6 @@ $('.owl-carousel').owlCarousel({
     }
 });
 
-//let list = document.querySelector('#visitas');
-
 function selectItemEnter(childNodeNumber){
    /*console.log(list.childNodes);
    const childNodes = Array.from(list.childNodes);
@@ -45,6 +43,12 @@ function selectItemLeave(childNodeNumber){
 
 
 
+let list = document.querySelector('#visitas');
+if(!!list){
+    list.addEventListener("mouseover", function(event) {
+        console.log(event);
+    })
+}
 
 function desgraca() {
     var el = document.querySelector('#sympla');
