@@ -58,6 +58,14 @@ desgraca = function() {
     });
 }
 
+mouse = function() {
+    var el = document.querySelector('#mouse');
+    console.log(el);
+    el.scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
 toogleModalVisitas = function() {
     var el = document.querySelector('.simple-modal-visitas');
     el.classList.toggle('displayNone');
