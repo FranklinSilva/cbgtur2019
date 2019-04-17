@@ -81,7 +81,7 @@ var modalVisitasContent = [
     {
         title: "Passeio Ilhas dos Frades e Itaparica",
         dates: "23, 24 e 25/05/19",
-        orientations: "R$100 Day Use com almoço e Taxa Ambiental, compra do transfer a ser feita dia 22/05",
+        orientations: "R$120 Day Use com almoço e Taxa Ambiental, compra do transfer a ser feita dia 22/05",
         img: "img/visitasTecnicas/frades.jpg"
     },
     {
