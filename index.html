@@ -8,7 +8,7 @@
 	<link rel="showtcut icon" href="/img/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/foundation.min.css" />
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/owl.theme.default.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
@@ -24,10 +24,57 @@
 	<meta name="author" content="Franklin Silva">
 </head>
 <body>
-	<section  class="stunning-first-section">
+	<section  class="stunning-first-section" style="display: flex; justify-content: center;">
 		
-		<header class="vertical-full--header">
-			<img class="" src="img/logo.png" alt="logo">
+		<header class="vertical-full--header row  align-middle no-max-width" style="justify-content: space-between">
+			<div class="column small-2 show-for-small-only">
+				<a onclick="toggleMenu()"style="display: flex; justify-content: center; color: #999;">
+					<i class="fas fa-bars"></i>
+				</a>
+			</div>
+			<div class="column small-10 medium-3 large-3">
+				<img class="" src="img/logo2.png" alt="logo">
+			</div>
+			<div class="show-for-medium" style="align-self: center">
+				<a onclick="mouse('#evento')" class="menu-main--item">evento</a>
+			</div>
+			<div class="show-for-medium" style="align-self: center">
+				<a onclick="mouse('#mouse');" class="menu-main--item">increva-se</a>
+			</div>
+			<div class="show-for-medium" style="align-self: center">
+				<a onclick="toogleModal();" class="menu-main--item">programação</a>
+			</div>
+			<div class="show-for-medium" style="align-self: center">
+				<a onclick="mouse('#apoio');" class="menu-main--item">apoio</a>
+			</div>
+			<div class="show-for-medium" style="align-self: center">
+				<a onclick="mouse('#visita');" class="menu-main--item">visitas técnicas</a>
+			</div>
+			<!--<div class="show-for-medium" style="align-self: center">
+				<a href="/MostraTurismoStand.html" class="menu-main--item">seja um expositor</a>
+			</div>-->
+			<div class="menu-main column small-12 displayNone fadeInDown animated">
+				<ul>
+					<li class="menu-main--item">
+						<a onclick="mouse('#evento'); toggleMenu()">evento</a>
+					</li>
+					<li class="menu-main--item">
+						<a onclick="mouse('#mouse'); toggleMenu()">increva-se</a>
+					</li>
+					<li class="menu-main--item">
+						<a onclick="toogleModal(); toggleMenu()">programação</a>
+					</li>
+					<li class="menu-main--item">
+						<a onclick="mouse('#apoio'); toggleMenu()">apoio</a>
+					</li>
+					<li class="menu-main--item">
+						<a onclick="mouse('#visita'); toggleMenu()">visitas técnicas</a>
+					</li>
+					<!--<li class="menu-main--item">
+						<a href="/MostraTurismoStand.html">seja um expositor</a>
+					</li>-->
+				</ul>
+			</div>
 		</header>
 		<!--
 		<div class="panel panel--default panel--id-9822"> 
@@ -50,7 +97,7 @@
 			</div>
 		</div>
 
-		<span onclick="mouse()" class="transparent-button">
+		<span onclick="mouse('#mouse')" class="transparent-button">
 			Garanta sua Vaga!!
 		</span>
 
@@ -64,15 +111,13 @@
 		</header>-->
 	</section>
 	
-	<section class="basic-section">
+	<section id="evento" class="basic-section">
 		<div class="row">
 			<h3 class="collumns small-12 title-section">Sobre o Evento</h3>
 			<p class="body-paragraph">		
-				O Congresso Brasileiro de Guias de Turismo CBGTUR – é um evento anual promovido pela Federação Nacional dos Guias de Turismo do Brasil – FENAGTUR e organizado pelos Sindicatos Estaduais. De caráter regional, busca unir a discussão de  temas de relevância para a categoria e a divulgação do potencial turístico da localidade sediante.
-			</p>
-	
+				O Congresso Brasileiro de Guias de Turismo – CBGTUR,  é um evento anual promovido pela Federação Nacional dos Guias de Turismo do Brasil – FENAGTUR e organizado pelos sindicatos estaduais. A sua 39ª edição acontecerá no Centro Histórico de Salvador, de 22 a 26 de maio de 2019, no Hotel Pestana Convento do Carmo.	
 			<p class="body-paragraph">
-				A 39ª edição acontecerá na cidade do Salvador- Bahia, de 22 a 26 de maio de 2019, e será organizado pelo Sindicato dos Guias de Turismo do Estado da Bahia – SINGTUR-BA.
+				De caráter regional, o Congresso na Bahia está sendo organizado pelo Sindicato dos Guias de Turismo do Estado da Bahia – SINGTUR-BA. Tendo como tema principal “Guias de Turismo  Valorizando Etnias Brasileiras”, promoverá palestras, painéis, mostras, city tours e visitas técnicas. 
 			</p>
 		</div>
 	</section>
@@ -83,21 +128,15 @@
 		
 			<div class="collumns medium-6">
 				<p class="body-paragraph">
-					O CBGTUR 2019 é divido em vários momentos de mostras e visitas técnicas e pode ser comprado por Estudantes, sindicalizados e não-sindicalizados.
+					O Congresso Brasileiro de Guias de Turismo CBGTUR oferece a possibilidade de participar de várias mostras, city tours e visitas técnicas, que podem ser adquiridos por estudantes, acompanhante e guias sindicalizados e não-sindicalizados.
 				</p>
 	
 				<p class="body-paragraph">
-					Escolha os seu(s) ingresso(s) abaixo e nos vemos lá!
+					Escolha os seu(s) ingresso(s) abaixo e atenção para as datas de virada de lote!! 
 				</p>
 
 				<div class="observation-card">
-					<p class="body-paragraph">
-						Fique atento para as datas de virada de lote!! Escolha os seu(s) ingresso(s) abaixo e nos vemos lá!
-					</p>
-
 					<ul style="margin: 0; list-style: none;" class="body-paragraph">
-						<li>- O segundo lote começa a ser vendido dia <b>01/01/2019</b></li>
-						<li>- O terceiro lote começa a ser vendido dia <b>01/03/2019</b></li>
 						<li>- O quarto lote começa a ser vendido dia <b>01/05/2019</b></li>
 					</ul>
 				</div>
@@ -106,10 +145,10 @@
 					<span><i class="animated fas fa-award"></i> Veja a programação Completa</span>
 				</div>
 
-				<img class="" src="img/banner.jpg">
+				<!--<img class="" src="img/banner.jpg">-->
 
 				<div class="full-calendar-box pointer-object">					
-				<span style="font-size:14px">Gostaria de realizar sua inscrição via transferência? Envie um e-mail para <b>pagamentos@cbgtur2019.com.br</b></span>
+					<span style="font-size:14px">Gostaria de realizar sua inscrição via transferência? Envie um e-mail para <b>pagamentos@cbgtur2019.com.br</b></span>
 				</div>
 
 			</div>
@@ -123,8 +162,8 @@
 		</div>
 	</section>
 
-	<section class="basic-section">
-		<img style="margin-top: 5rem; width: 100%" class="row" src="img/banner2.jpg">
+	<section id="visita" class="basic-section">
+		<!--<img style="margin-top: 5rem; width: 100%" class="row" src="img/banner2.jpg">-->
 
 		<h3 class="title-section">Visitas técnicas</h3>
 
@@ -181,19 +220,37 @@
 		<div class="mission-objective collumns small-12">
 			<h2 class="title-section blue">PALESTRANTES CONFIRMADOS</h2>
 			<div class="row speakers-list--container">
+
 				<div class="collumns small-12 medium-6 large-4">
-					<img class="speaker-photo" src="img/speakers/tiana.jpg">
+					<a onclick="populateModalSpeaker(0)">
+						<img class="speaker-photo" src="img/speakers/tinoco.jpg">
+					</a>
+					<h3 class="speaker-title">Cláudio Tinoco</h3>
+					<p class="speaker-bio"> 
+						Secretário de Turismo
+					</p>
+					<p class="speaker-title-press">
+						 Salvador, você sente que é diferente
+					</p>
+				</div>
+
+				<div class="collumns small-12 medium-6 large-4">
+					<a onclick="populateModalSpeaker(0)">
+						<img class="speaker-photo" src="img/speakers/tiana.jpg">
+					</a>
 					<h3 class="speaker-title">Tiana Camardelli</h3>
 					<p class="speaker-bio"> 
 						Tribunal de Ética e Disciplina da OAB-BA.
 					</p>
 					<p class="speaker-title-press">
-						 A Reforma Trabalhista pode Influenciar na profissão do GUia de Turismo?
+						 A Reforma Trabalhista pode Influenciar na profissão do Guia de Turismo?
 					</p>
 				</div>
 
 				<div class="collumns small-12 medium-6 large-4">
-					<img class="speaker-photo" src="img/speakers/padre.jpg">
+					<a onclick="populateModalSpeaker(1)">
+						<img class="speaker-photo" src="img/speakers/padre.jpg">
+					</a>
 					<h3 class="speaker-title">Padre Manoel Oliveira</h3>
 					<p class="speaker-bio">
 						Coordenador Nacional da Pastoral do Turismo.
@@ -203,8 +260,11 @@
 				   </p>
 				</div>
 
-				<div class="collumns small-12 medium-6 large-4">
-					<img class="speaker-photo" src="img/speakers/mistico.jpg">
+				<div class="collumns small-12 medium-6 large-3">
+					<a onclick="populateModalSpeaker(2)">
+						<img class="speaker-photo" src="img/speakers/mistico.jpg">
+					</a>
+
 					<h3 class="speaker-title">Paulo Atzingen</h3>
 					<p class="speaker-bio">
 						Fundador do Diário do Turismo.
@@ -214,8 +274,10 @@
 				   </p>
 				</div>
 
-				<div class="collumns small-12 medium-6 large-4">
-					<img class="speaker-photo" src="img/speakers/andre.jpg">
+				<div class="collumns small-12 medium-6 large-3">
+					<a onclick="populateModalSpeaker(3)">
+						<img class="speaker-photo" src="img/speakers/andre.jpg">
+					</a>
 					<h3 class="speaker-title">André Sena</h3>
 					<p class="speaker-bio">
 						Membro do projeto GoOn - Turismo Inteligente
@@ -224,8 +286,10 @@
 						GoOn Guide - Um case de Sucesso
 				   </p>
 				</div>
-				<div class="collumns small-12 medium-6 large-4">
-					<img class="speaker-photo" src="img/speakers/marcus.jpg">
+				<div class="collumns small-12 medium-6 large-3">
+					<a onclick="populateModalSpeaker(4)">
+						<img class="speaker-photo" src="img/speakers/marcus.jpg">
+					</a>					
 					<h3 class="speaker-title">Marcus Casaes</h3>
 					<p class="speaker-bio">
 						Membro do GoOn - Turismo Inteligente.
@@ -234,8 +298,11 @@
 						GoOn Guide - Um case de Sucesso
 				   </p>
 				</div>
-				<div class="collumns small-12 medium-6 large-4">
-					<img class="speaker-photo" src="img/speakers/alice.jpg">
+				<div class="collumns small-12 medium-6 large-3">
+					<a onclick="populateModalSpeaker(5)">
+						<img class="speaker-photo" src="img/speakers/alice.jpg">
+					</a>		
+
 					<h3 class="speaker-title">Alice Cristina Vargas</h3>
 					<p class="speaker-bio">
 						Gerente de Marketing e Comunicação do Sebrae
@@ -245,7 +312,9 @@
 				   </p>
 				</div>
 				<div class="collumns small-12 medium-6 large-4">
-					<img class="speaker-photo" src="img/speakers/neide.jpg">
+					<a onclick="populateModalSpeaker(6)">
+						<img class="speaker-photo" src="img/speakers/neide.jpg">
+					</a>		
 					<h3 class="speaker-title">Mãe Neide</h3>
 					<p class="speaker-bio">
 						Embaixadora da Gastronomia Afro Indígena
@@ -255,7 +324,9 @@
 					</p>
 				</div>
 				<div class="collumns small-12 medium-6 large-4">
-					<img class="speaker-photo" src="img/speakers/sonea.jpg">
+					<a onclick="populateModalSpeaker(7)">
+						<img class="speaker-photo" src="img/speakers/sonea.jpg">
+					</a>
 					<h3 class="speaker-title">Sonea Stival</h3>
 					<p class="speaker-bio">
 						Coordenadora de Gastronomia Goiás Turismo
@@ -265,7 +336,9 @@
 					</p>
 				</div>
 				<div class="collumns small-12 medium-6 large-4">
-					<img class="speaker-photo" src="img/speakers/claudio.jpg">
+					<a onclick="populateModalSpeaker(7)">
+						<img class="speaker-photo" src="img/speakers/claudio.jpg">
+					</a>
 					<h3 class="speaker-title">Cláudio Santos</h3>
 					<p class="speaker-bio">
 						Presidente do Instituto Gestar Brasil, Diretor da Next Opinion Portugal 
@@ -374,9 +447,20 @@
 	</section>		
 	
 	<section class="mission-row row">
-		<div class="pestana-back collumns small-12">
+		<div class="mission-objective collumns small-12">
+
+		<!--<div class="pestana-back collumns small-12">-->
 			
 			<h2 class="local-evento">Local do Evento</h2>
+
+			<div class="pestana-container row">
+				<p class="body-paragraph medium-7 large-8 column">
+					O Pestana Convento do Carmo, localizado no Centro Histórico de Salvador, no bairro do Santo Antônio, foi instalado num prédio tombado pela UNESCO como Patrimônio Histórico da Humanidade, o Convento do Carmo, que começou a ser construído  em 1586 pela Ordem Primeira dos Freis Carmelitas. Bem próximo ao Pelourinho, é o primeiro hotel histórico de luxo do Brasil. 
+						O Aeroporto Internacional Luiz Eduardo Magalhães, em Salvador, fica a 35 quilômetros de distância.
+				</p>
+				<img class="column medium-5 large-4" src="img/pestanaBack.jpg" />
+			</div>
+
 			<iframe id="maps" class="product-body--maps-frame"
 				frameborder="0" style="border:0"
 				src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAdi4vU2QNAh0TR18rrtVxWOwm0D_yS6qM&q=pestanaconventodocarmo+salvador" allowfullscreen>
@@ -388,8 +472,20 @@
 		</div>
 
 	</section>
+
+	<section class="follow-instagram">
+		<a style="text-decoration: none" href="https://www.instagram.com/singturbahia/" target="_blank">
+				<div class="">
+				</div>
+				<div class="instagram--container">
+					<svg style="width: 50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#fff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+					<h3 style="">Você pode conferir muito mais conteúdos exclusivos no nosso Instagram</h3>
+					<h3 style="font-weight: bold">@singturbahia</h3>
+				</div>
+		</a>
+	</section>
 			
-	<div class="erika-footer">
+	<div id="apoio" class="erika-footer">
 		<div class="row align-center align-middle">
 			<h2 class="columns small-12 large-3 title-section">Parceiros:</h2>
 			<div class="columns small-12 large-9">
@@ -454,6 +550,11 @@
 							<img class="apoio-img" src="img/sac.jpg">
 						</a>
 					</div>
+					<div class="columns small-6 medium-4 large-3">
+						<a target="_blank" href="https://portalturismototal.com.br/">
+							<img class="apoio-img" src="img/turismoTotal.jpg">
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -514,9 +615,14 @@
 	  
 			<!--<p class=" ev-btn--span-below caption-text text--center pointer-object"
 			 ng-click="ri.signupPrompt =false">Fechar</p>-->
-	  
-			<div onclick="toogleModal()" class="full-calendar-box simple-modal__spacing pointer-object">					
-				<span><i class="animated fas fa-times-circle"></i>  Fechar</span>
+				
+			<div style="display: flex;"> 
+				<div style="margin-right: 5px" onclick="toogleModal()" class="full-calendar-box simple-modal__spacing pointer-object">					
+					<span><i class="animated fas fa-times-circle"></i>  Fechar</span>
+				</div>
+				<div style="margin-left: 5px" class="full-calendar-box-another simple-modal__spacing pointer-object">					
+					<a href="programacao.pdf" target="_blank"><i class="animated fas fa-file-pdf"></i>  Baixar em PDF</span>
+				</div>
 			</div>
 		  </div>
 		</div>
@@ -530,10 +636,25 @@
 			<img class="modal-hotel--img" src="#">
 			<!--<p class=" ev-btn--span-below caption-text text--center pointer-object"
 			 ng-click="ri.signupPrompt =false">Fechar</p>-->
-			 <a class="modal-hotel--href" href="#" target="_blank">						
+			 <a style="text-decoration: none, color: white" class="modal-hotel--href" href="#" target="_blank">						
 				<span class="hotels-section--title">Acesse o Website</span>
 			 </a>
 			<div onclick="toogleModalHotel()" class="full-calendar-box simple-modal__spacing pointer-object">					
+				<span><i class="animated fas fa-times-circle"></i>  Fechar</span>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<div class="simple-modal simple-modal-speaker displayNone">
+		<div class="simple-modal--dialog simple-modal--dialog--full-width fadeInDown animated">
+		  <div class="simple-modal--dialog--body">
+
+			<h3 class="simple-modal-speaker--title speaker-title"></h3>
+			<img class="simple-modal-speaker--img speaker-photo" src="#">
+			<p class="simple-modal-speaker--bio"></p>
+
+			<div onclick="toogleModalSPeakers()" class="full-calendar-box simple-modal__spacing pointer-object">					
 				<span><i class="animated fas fa-times-circle"></i>  Fechar</span>
 			</div>
 		  </div>
@@ -546,4 +667,5 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/modalPalestrantes.js"></script>
 </html>

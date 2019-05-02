@@ -13,6 +13,11 @@ $('.owl-carousel').owlCarousel({
     }
 });
 
+toggleMenu = function() {
+    var el = document.querySelector('.menu-main');
+    el.classList.toggle('displayNone');
+};
+
 function selectItemEnter(childNodeNumber){
    /*console.log(list.childNodes);
    const childNodes = Array.from(list.childNodes);
@@ -58,8 +63,8 @@ desgraca = function() {
     });
 }
 
-mouse = function() {
-    var el = document.querySelector('#mouse');
+mouse = function(id) {
+    var el = document.querySelector(id);
     console.log(el);
     el.scrollIntoView({
         behavior: 'smooth'

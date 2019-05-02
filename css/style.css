@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700');
 
-#show-discount
 
 body, h1, h2, h3, h4, h5, h6, span, p {
 	font-family: 'Mukta', sans-serif !important;
@@ -75,7 +74,7 @@ body, h1, h2, h3, h4, h5, h6, span, p {
     text-align: center;
     border: 2px solid #fafafa;
     padding: 0.5rem;
-	margin: 0 30%;
+	/*margin: 0 30%;*/
 	transition: 0.5s;
 	cursor: pointer;
 }
@@ -99,9 +98,21 @@ body, h1, h2, h3, h4, h5, h6, span, p {
 		font-size: 70px;
 	text-shadow: 1px 1px #404142;
 	margin: 2rem 0 0.5rem;
-	color: rgb(253,185,19);/*rgb(177, 15, 31);*/
+	color: /*rgb(253,185,19);*/rgb(177, 15, 31);
 	font-family: 'Mukta', sans-serif !important;
 }
+
+.pestana-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	margin: 0 0 1rem;
+	background-color: #fff;
+	padding: 1rem 0.5rem 1rem;
+	border-radius: 6px;
+}
+
 
 .title-section.yellow {
 	color: rgb(253,185,19);
@@ -135,21 +146,54 @@ body, h1, h2, h3, h4, h5, h6, span, p {
 
 .vertical-full--header {
     position: absolute;
-	font-size: 20px;
-	width: 50%;
-	margin: 0 25%;
-    background-color: rgba(255,255,255,1);
-    padding: 1.5rem;
+		font-size: 20px;
+    background-color: rgba(255,255,255,0.9);
+		padding: 0.7rem;
+		border-bottom: 1px solid #999;
     /* height: 98vh; */
     top: 0;
-    z-index: 2;
+		z-index: 2;
+		position: fixed;
     /* margin: 1vh; */
+}
+
+.menu-main ul {
+	list-style: none;
+	padding: 0;
+	margin: 2rem 0 0;
+}
+
+
+.menu-main ul li a {
+	text-decoration: none;
+	padding: 0.5rem;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	color: #999;
+}
+
+.menu-main--item {
+	font-family: 'Mukta';
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	color: #999;
+	text-decoration: none;
+	transition: 1s;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.menu-main--item:hover {
+	color: #404142;
+	transition: 1s;
 }
 
 @media screen and (min-width: 40em){
 	.vertical-full--header {
-		width: 36%;
-		margin: 0 32%;
+
 	}
 	
 	.image-1 h1, .image-2 h1 {
@@ -168,14 +212,17 @@ body, h1, h2, h3, h4, h5, h6, span, p {
 		top: 38vh;
 	}
 
+	.menu-main--item {
+		font-size: 14px;
+	}
+
 	.vertical-full--header {
-	    width: 24%;
-		margin: 0 38%;
+		padding: 0.5rem 1.5rem;
 	}
 
 	.transparent-button {
 		width: 22%;
-		margin: 0 39%;
+		/*margin: 0 39%;*/
 		font-size: 20px;
 	}
 	.image-1 h2, .image-2 h2 {
@@ -249,6 +296,27 @@ body, h1, h2, h3, h4, h5, h6, span, p {
 	text-transform: uppercase;
 	font-size: 20px;
 	margin: 0 auto 3rem;
+}
+
+.full-calendar-box-another {
+	background-color: rgb(158, 117, 12);
+	padding: 0.8rem;
+	color: #f5f5f5;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin: 0 auto 3rem;
+}
+
+.full-calendar-box-another a {
+	color: #f5f5f5;
+	text-decoration: none;
+}
+
+.full-calendar-box-another a:visited {
+	color: #f5f5f5;
+	text-decoration: none;
 }
 
 .sympla-container {
@@ -586,6 +654,10 @@ a:visited .hotels-section--title {
 	padding: 1rem;
 }
 
+.row.no-max-width{
+	max-width: none !important;
+}
+
 .mission-row.row {
 	max-width: none !important;
 	text-align: center;
@@ -615,6 +687,8 @@ a:visited .hotels-section--title {
 
 .mission-objective {
 	background: linear-gradient( 135deg, rgba(253,185,19,0.7) 0%, rgba(253,185,19,0.7) 65%),
+							url(../img/peulorinhoBack.jpg) no-repeat 30% center;
+	background: -webkit-linear-gradient( 135deg, rgba(253,185,19,0.7) 0%, rgba(253,185,19,0.7) 65%),
 							url(../img/peulorinhoBack.jpg) no-repeat 30% center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -715,6 +789,18 @@ a:visited .hotels-section--title {
 	list-style: none;
 	padding: 0;
 	margin: 2rem 0;
+}
+
+.follow-instagram {
+	background-color: #C13584;
+	padding: 1rem;
+}
+
+.follow-instagram h3 {
+	color: #f5f5f5;
+	font-size: 18px;
+	font-weight: 300;
+	margin: 1rem;
 }
 
 .erika-footer{
@@ -1379,6 +1465,35 @@ a:visited .hotels-section--title {
 		margin: 2rem 0;
 	}
 
+	.instagram--container {
+		display: flex; 
+		justify-content: center; 
+		align-items: center;
+	}
+
+	.instagram--container h3 {
+		text-align: center;
+	}
+
+	.instagram-image--container{
+		display: flex; 
+		justify-content: center; 
+		align-items: center;
+	}
+
+	.instagram-image--container img{
+		max-width: 200px
+	}
+
+	@media screen and (max-width: 39.9375em) {
+		.pestana-container, .instagram--container {
+			flex-direction: column;
+		}
+
+	}
+
+
+
 	/*INSIDE PAGE CBGTUR*/
 	.cbgtur--inside-header{
 		background: url(../img/salvador.jpg) 80%;
@@ -1397,3 +1512,50 @@ a:visited .hotels-section--title {
 		display: block;
 		margin: 0 auto;
 	}
+
+
+	
+  
+ /*
+  *#ANIMATIONS
+ */
+
+ .animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
