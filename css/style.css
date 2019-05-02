@@ -113,6 +113,12 @@ body, h1, h2, h3, h4, h5, h6, span, p {
 	border-radius: 6px;
 }
 
+@media screen and (min-width: 64em){
+	.pestana-container {
+		width: 80%;
+		align-self: center
+	}
+}
 
 .title-section.yellow {
 	color: rgb(253,185,19);
@@ -149,12 +155,13 @@ body, h1, h2, h3, h4, h5, h6, span, p {
 		font-size: 20px;
     background-color: rgba(255,255,255,0.9);
 		padding: 0.7rem;
-		border-bottom: 1px solid #999;
+		border: 1px solid #999;
+		border-top: none;
     /* height: 98vh; */
     top: 0;
 		z-index: 2;
 		position: fixed;
-    /* margin: 1vh; */
+		/* margin: 1vh; */
 }
 
 .menu-main ul {
@@ -171,6 +178,11 @@ body, h1, h2, h3, h4, h5, h6, span, p {
 	text-align: center;
 	cursor: pointer;
 	color: #999;
+}
+
+.menu-medium-container{
+	display: flex;
+
 }
 
 .menu-main--item {
