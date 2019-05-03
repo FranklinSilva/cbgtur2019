@@ -832,6 +832,7 @@ a:visited .hotels-section--title {
 	color: #f5f5f5;
 	padding: 0.5rem;
 	background-color: rgb(161, 79, 40);
+	padding-bottom: 1.5rem
 }
 
 .cbgtur-footer p {
@@ -844,7 +845,20 @@ a:visited .hotels-section--title {
 	text-align: center;
     font-size: 38px;
 	margin: 1rem 0 0.5rem;
-	color:#f5f5f5
+	color:#074162
+}
+
+.patrocinio-footer{
+	padding-top: 1rem;
+	color: #f5f5f5;
+	padding: 0.5rem;
+	background-color: rgb(135, 85, 19);
+}
+
+.patrocinio-footer p {
+	margin: 1rem 0;
+	text-align: center;
+	font-size: 12px;
 }
 
 .realizacao-img {
@@ -853,14 +867,45 @@ a:visited .hotels-section--title {
 	border: 5px solid rgb(135, 85, 30)
 }
 
+.title--cbgtur-patrocínio {
+	text-align: center;
+    font-size: 28px;
+	font-weight: 300;
+	color:#f5f5f5
+}
+
+
+.patrocinio-img {
+	display: block;
+	margin: 0 auto;
+	border: 5px solid rgb(90, 56, 19)
+}
+
 @media screen and (min-width: 40em){
 	.realizacao-img {
 		max-width: 200px;
 	}	
+
+	.patrocinio-img {
+		max-width: 250px;
+
+	}
+	
 }
 
 
+.last-footer {
+	background-color: #404142;
+}
 
+.last-footer p {
+	padding: 1rem 0;
+	margin: 0;
+	text-align: center;
+	font-size: 12px;
+	color:#f5f5f5
+
+}
 
 
 
